@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  display: flex; 
+  flex-wrap: wrap;
 }
 
 .App-logo {
@@ -40,7 +42,7 @@
 .cardBook {
   padding: 5px;
   background-color: #dedede;
-  width: 300px;
+  width: 400px;
   border-radius: 10px;
   margin: 10px;
 };
