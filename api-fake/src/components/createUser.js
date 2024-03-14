@@ -6,18 +6,22 @@ function CreateUser() {
     const [name, setName] = useState('');
     const [job, setJob] = useState('');
 
-    function createUser(){
+    function createUser(event){
+
+        event.preventDefault();
+
         let user = JSON.stringify({name: name, job: job});
-        alert(user);
+        // alert(user);
+        console.log(user);
 
         axios.post('https://reqres.in/api/users', user)
-            .then((response)=>{
+            .then(response =>{
                 console.log(response)
-                alert(response)
+                // alert(response)
             })
-            .catch((error)=>{
+            .catch(error =>{
                 console.log(error)
-                alert(error)
+                // alert(error)
             })
     }
 
